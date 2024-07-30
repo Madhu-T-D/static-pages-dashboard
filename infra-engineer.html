@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infra Engineer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Manage Requests</a>
+            <a href="#">Resource Usage</a>
+            <a href="#">Provisioning/Deprovisioning</a>
+            <a href="#">Issue Tracking</a>
+        </nav>
+        <div class="user-profile">User Icon</div>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="#">Manage Requests</a></li>
+            <li><a href="#">Resource Usage</a></li>
+            <li><a href="#">Provisioning/Deprovisioning</a></li>
+            <li><a href="#">Issue Tracking</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="manage-requests">
+            <h2>Manage Resource Requests</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Requester</th>
+                        <th>Resource Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>User1</td>
+                        <td>VM</td>
+                        <td>Pending</td>
+                        <td><button>Approve</button> <button>Deny</button> <button>Modify</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>User2</td>
+                        <td>Storage</td>
+                        <td>Approved</td>
+                        <td><button>Approve</button> <button>Deny</button> <button>Modify</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="resource-usage">
+            <h2>Resource Usage</h2>
+            <div class="charts">
+                <!-- Placeholder for charts -->
+                <p>Resource Usage Charts</p>
+            </div>
+        </section>
+        <section id="provisioning-deprovisioning">
+            <h2>Provisioning/Deprovisioning</h2>
+            <div class="controls">
+                <!-- Placeholder for provisioning/deprovisioning controls -->
+                <p>Provisioning/Deprovisioning Controls</p>
+            </div>
+        </section>
+        <section id="issue-tracking">
+            <h2>Issue Tracking</h2>
+            <ul>
+                <li>Issue 1 - <span>Status: Open</span></li>
+                <li>Issue 2 - <span>Status: Closed</span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End-User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Request Resources</a>
+            <a href="#">Active Requests</a>
+            <a href="#">Manage Resources</a>
+            <a href="#">Notifications</a>
+        </nav>
+        <div class="user-profile">User Icon</div>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="#">Request Resources</a></li>
+            <li><a href="#">Active Requests</a></li>
+            <li><a href="#">Manage Resources</a></li>
+            <li><a href="#">Notifications</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="request-resources">
+            <h2>Request Cloud Resources</h2>
+            <form>
+                <label for="resource-type">Resource Type:</label>
+                <select id="resource-type">
+                    <option value="vm">Virtual Machine</option>
+                    <option value="storage">Storage</option>
+                </select>
+                <label for="config">Configuration:</label>
+                <input type="text" id="config" name="config">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="active-requests">
+            <h2>Active Requests</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Resource Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>VM</td>
+                        <td>Pending</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Storage</td>
+                        <td>Approved</td>
+                        <td><button>View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="manage-resources">
+            <h2>Manage Resources</h2>
+            <ul>
+                <li>VM1 <button>Modify</button> <button>Deprovision</button></li>
+                <li>Storage1 <button>Modify</button> <button>Deprovision</button></li>
+            </ul>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <ul>
+                <li>Notification 1</li>
+                <li>Notification 2</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
